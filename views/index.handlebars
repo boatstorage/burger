@@ -28,7 +28,7 @@
 
       {{#each burgers}}
         {{#if this.devoured}}
-           <li>
+           <li style="list-style:none;">
               <h5 class="text-muted">{{this.id}}. {{this.burger_name}}</h5>
             </li>
         
@@ -41,7 +41,7 @@
 <br>
 
 <div class="row">
-  <div class="col-md-6"
+  <div class="col-md-6">
   <h2>Add a Burger</h2>
   <form action="/burgers/insertOne" method="POST">
 

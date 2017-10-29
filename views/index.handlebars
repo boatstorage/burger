@@ -10,7 +10,7 @@
         {{#each burgers}}
           {{#unless this.devoured}}
           
-            <li>
+            <li style="list-style:none;">
               <h5>{{this.id}}. {{this.burger_name}}
                 <form action='burgers/updateOne/{{this.id}}?_method=PUT' method='POST'>
             
